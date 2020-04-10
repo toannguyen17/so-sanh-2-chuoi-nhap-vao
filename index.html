@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>So sánh 2 chuỗi nhập vào.</title>
+</head>
+<body>
+	<p>Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.</p>
+	<input type="text" name="text1" placeholder="chuỗi 1">
+	<input type="text" name="text2" placeholder="chuỗi 2">
+	<button onclick="checkText()">So sánh chuỗi</button>
+	<script type="text/javascript">
+		let text1 = document.getElementsByName('text1')[0];
+		let text2 = document.getElementsByName('text2')[0];
+		function checkText() {
+			if (text1.value.length > 0) {
+				if (text1.value === text2.value) {
+					alert('2 chuỗi là giống bằng nhau.');
+				}else{
+					alert('2 chuỗi không giống nhau.');
+				}
+			}else{
+				alert('Hãy nhập vào ký tự muốn kiểm tra...');
+			}
+		}
+	</script>
+</body>
+</html>
